@@ -1,0 +1,19 @@
+{
+  "name": "peterson.by",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petersonby/peterson.by.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petersonby/peterson.by/issues"
+  },
+  "homepage": "https://github.com/petersonby/peterson.by#readme"
+}
