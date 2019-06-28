@@ -28,21 +28,32 @@
 	font-size: 18px;
 	color: #888;
 	letter-spacing: .08em;
-	overflow: auto;
-	display: flex;
-	justify-content: space-between;
+	overflow-y: auto;
+	padding-top: 60px;
+}
+
+.container {
+	max-width: 700px;
+	margin-right: 60px;
+	margin-left: 560px;
 }
 
 /* Sidebar */
 .sidebar {
 	background: #222;
-	flex: 0 0 50%;
-	display: flex;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 100%;
+	padding: 60px;
+	overflow-y: auto;
 }
 
 .sidebar__inner {
-	margin: auto;
 	text-align: center;
+	width: 100%;
 }
 
 .sidebar__img {
@@ -55,8 +66,7 @@
 }
 
 .sidebar__title {
-	margin: 0;
-	margin-bottom: 18px;
+	margin: 0 0 18px;
 	font-size: 48px;
 	font-weight: 300;
 	line-height: 1em;
@@ -64,7 +74,7 @@
 }
 
 .sidebar__subtitle {
-	margin: 0;
+	margin: 0 0 36px;
 	font-size: 24px;
 	font-weight: 300;
 	color: #888;
@@ -72,13 +82,37 @@
 
 /* End Sidebar */
 
-/* About */
+/* Social */
 
-.about {
-	padding: 60px;
-	overflow: auto;
-	flex: 0 0 50%;
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.social__link {
+	margin-right: 15px;
+	text-decoration: none;
+	opacity: 0.5;
+	transition: opacity .3s ease;
+}
+
+.social__link:last-child {
+	margin-right: 0;
+}
+
+.social__link:hover {
+	opacity: 1;
+}
+
+.social__link:focus {
+	opacity: 0.8;
+	outline: 0;
+}
+
+/* End Social */
+
+/* About */
 
 .about__title {
 	font-size: 36px;
@@ -112,6 +146,7 @@
 .about__desc a:hover,
 .about__desc a:focus {
 	color: #F1C40F;
+	outline: none;
 }
 
 .about__desc h3 {
@@ -126,14 +161,38 @@
 
 /* Adaptive */
 
-@media all and ( max-width: 760px ) {	
+@media all and ( max-width: 1300px ) {	
+	.container {
+		max-width: none;
+	}
+}
+
+@media all and ( max-width: 900px ) {	
 	.body {
-		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	
+	.container {
+		margin-right: 30px;
+		margin-left: 330px;
 	}
 
-	.sidebar,
-	.about {
-		flex: 0 0 100%;
+	.sidebar {
+		width: 300px;
+		padding: 30px;
+	}
+
+	.sidebar__img {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 18px;
+	}
+
+	.sidebar__title {
+		font-size: 30px;
+	}
+	.sidebar__subtitle {
+		font-size: 20px;
 	}
 }
 
