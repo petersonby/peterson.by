@@ -26,6 +26,7 @@
 	  Helvetica Neue,
 	  sans-serif;
 	font-size: 18px;
+	line-height: 1.5em;
 	color: #888;
 	letter-spacing: .08em;
 	overflow-y: auto;
@@ -67,7 +68,7 @@
 
 .sidebar__title {
 	margin: 0 0 18px;
-	font-size: 48px;
+	font-size: 2.5em;
 	font-weight: 300;
 	line-height: 1em;
 	color: #fff;
@@ -75,7 +76,7 @@
 
 .sidebar__subtitle {
 	margin: 0 0 36px;
-	font-size: 24px;
+	font-size: 1.5em;
 	font-weight: 300;
 	color: #888;
 }
@@ -115,7 +116,7 @@
 /* About */
 
 .about__title {
-	font-size: 36px;
+	font-size: 2em;
 	line-height: 1.5em;
 	color: #222;
 	text-align: left;
@@ -150,7 +151,7 @@
 }
 
 .about__desc h3 {
-	font-size: 28px;
+	font-size: 1.5em;
 	color: #222;
 	text-align: left;
 	font-weight: 300;
@@ -188,11 +189,34 @@
 		margin-bottom: 18px;
 	}
 
-	.sidebar__title {
-		font-size: 30px;
+		.sidebar__title {
+			font-size: 1.5em;
+		}
+		.sidebar__subtitle {
+			font-size: 1em;
+		}
+}
+
+@media all and ( max-width: 660px ) {
+	.body {
+		padding-top: 0;
 	}
-	.sidebar__subtitle {
-		font-size: 20px;
+	
+	.sidebar {
+		position: static;
+		width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.container {
+		margin: 0 30px;
+	}
+}
+
+@media all and ( max-width: 400px ) {
+	.body {
+		font-size: 14px;
 	}
 }
 
