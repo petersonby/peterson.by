@@ -37,22 +37,106 @@
 		</div>
 	</aside>
 
-	<section class="about">
+	<section class="about section">
 		<div class="container">
-			<h2 class="about__title">About me</h2>
-			<div class="about__desc">
+			<h2 class="section__title">About me</h2>
+			<div class="section__desc">
+				<p><strong>Age:</strong> 22</p>
+				<p><strong>Country:</strong> Belarus</p>
+				<p><strong>City:</strong> Minsk</p>
+				<p><strong>Education:</strong> BSU, FSC, specialty: Applied Informatics</p>
 				<p>
-					HTML, CSS<br>
-					БЭМ, SCSS, JavaScript (ES 5, 2015+)<br>
+					<strong>CV:</strong> <a href="https://jobs.tut.by/resume/dfc8634cff02a7e5fd0039ed1f366c6236726a" target="_blank" rel="nofollow">Link to CV</a>
+				</p>
+
+				<h3>Skills:</h3>
+				<p>
+					HTML, PUG<br>
+					CSS, SASS (SCSS), BEM <br>
+					JavaScript (ES 5, 2015+)<br>
 					Git / GitHub<br>
 					Node.js, Gulp, Webpack.
 				</p>
-				<h3>Links:</h3>
-				<p>
-					CodePen: <a href="https://codepen.io/petersonby" target="_blank" rel="nofollow">https://codepen.io/petersonby</a><br>
-					GitHub: <a href="https://github.com/petersonby" target="_blank" rel="nofollow">https://github.com/petersonby</a><br>
-					CV: <a href="https://jobs.tut.by/resume/dfc8634cff02a7e5fd0039ed1f366c6236726a" target="_blank" rel="nofollow">Link to CV</a>
-				</p>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="experience section">
+		<div class="container">
+			<h2 class="section__title">Experience</h2>
+			<div class="section__desc">
+				<p><strong>May 2017 – August 2017</strong> WordPress-developer at Moonway.by studio</p>
+				<ul>
+					<li>HTML coding</li>
+					<li>CMS WordPress integration</li>
+				</ul>
+				<p><strong>September 2017 – Present</strong> Freelance Front-end developer</p>				
+			</div>
+		</div>
+	</section>
+	
+	<section class="code section">
+		<div class="container">
+			<h2 class="section__title">Code Example</h2>
+			<div class="code__example">
+				<pre class="code__code">
+.view {
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.view__inner {
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow:
+		7.5px -5px 0 0 rgba(49,27,146, .6),
+		-7.5px -5px 0 0 rgba(81,45,168, .6),
+		0 10px 0 0 rgba(103,58,183, .6);
+	animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+	50% {
+		transform: scale(1.4) rotate(360deg);
+	}
+
+	100% {
+		transform: scale(1) rotate(720deg);
+	}
+}					
+				</pre>
+				<div class="view">
+					<span class="view__inner"></span>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="projects section">
+		<div class="container">
+			<h2 class="section__title">Projects</h2>
+			<div class="section__desc">
+				<p><a href="https://higood.by" target="_blank" rel="nofollow">https://higood.by</a></p>
+				<p><a href="http://brugge.by" target="_blank" rel="nofollow">http://brugge.by</a></p>
+				<p><a href="http://rezka.metalkorpusa.ru" target="_blank" rel="nofollow">http://rezka.metalkorpusa.ru</a></p>
+				<p><a href="http://ecohutorok.ru" target="_blank" rel="nofollow">http://ecohutorok.ru</a></p>
+				<p><a href="http://bestcell.solutions" target="_blank" rel="nofollow">http://bestcell.solutions</a></p>
+				<p><a href="https://sss.taxi" target="_blank" rel="nofollow">https://sss.taxi</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts section">
+		<div class="container">
+			<h2 class="section__title">Contacts</h2>
+			<div class="section__desc">
+				<a href="mailto:contact@peterson.by" target="_blank" rel="nofollow">contact@peterson.by</a>
 			</div>
 		</div>
 	</section>
