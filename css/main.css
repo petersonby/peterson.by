@@ -213,6 +213,13 @@
   }
 }
 
+.country:hover {
+	background: -webkit-linear-gradient(90deg, #fff 0, #fff 33.33%, #c00 33.33%, #c00 66.66%, #fff 66.66%, #fff 100%);;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+}
+
 /* Adaptive */
 
 @media all and ( max-width: 1300px ) {	
