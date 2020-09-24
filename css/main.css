@@ -50,6 +50,11 @@
 	height: 100%;
 	padding: 60px;
 	overflow-y: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .sidebar__inner {
@@ -79,6 +84,11 @@
 	font-size: 1.5em;
 	font-weight: 300;
 	color: #888;
+}
+
+.sidebar__logo {
+	max-width: 50%;
+	margin-top: 50px;
 }
 
 /* End Sidebar */
