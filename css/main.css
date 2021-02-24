@@ -14,7 +14,7 @@
 
 .body {
 	margin: 0;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #ecf0f1;
 	font-family:
 	  -apple-system,
@@ -27,7 +27,7 @@
 	  sans-serif;
 	font-size: 18px;
 	line-height: 1.5em;
-	color: #888;
+	color: #666;
 	letter-spacing: .08em;
 	overflow-y: auto;
 	padding-top: 60px;
@@ -89,6 +89,7 @@
 .sidebar__logo {
 	max-width: 50%;
 	margin-top: 50px;
+	height: auto;
 }
 
 /* End Sidebar */
@@ -253,10 +254,6 @@
 	}
 }
 @media all and ( max-width: 900px ) {	
-	.body {
-		padding-bottom: 30px;
-	}
-	
 	.container {
 		margin-right: 30px;
 		margin-left: 330px;
