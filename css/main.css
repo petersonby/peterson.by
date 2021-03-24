@@ -150,13 +150,21 @@
 
 .section__desc p {
 	margin: 0;
-	margin-bottom: 1.5em;
+}
+
+.section__desc p + p {
+	margin-top: 1.5em;
 }
 
 .section__desc a {
 	text-decoration: none;
 	color: #222;
 	transition: color .3s ease;
+}
+
+.section__desc ul {
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
 }
 
 .section__desc a:hover,
