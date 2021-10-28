@@ -213,6 +213,7 @@
 .code__code {
 	font-size: 0.667rem;
 	line-height: 1em;
+	tab-size: 4;
 	background: var(--dark-color);
 	color: var(--light-color);
 	padding: 30px;
