@@ -252,31 +252,6 @@
   }
 }
 
-.country:hover {
-	background: linear-gradient(0deg, #fff 0, #fff 16.665%, #c00 16.665%, #c00 33.33%, #fff 33.33%, #fff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-	background-size: 100% 200%;
-	-webkit-text-fill-color: transparent;
-	animation: fill 1.5s ease infinite alternate;
-	cursor: default;
-}
-
-@keyframes fill {
-	0% {
-		background-position: 0 200%;
-	}
-
-	50% {
-		background-position: 0 100%;
-	}
-
-	100% {
-		background-position: 0 100%;
-	}
-}
-
-
 /* Adaptive */
 
 @media all and ( max-width: 1300px ) {	
